@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom-css.css">
+    <title>Dannaroo's Weather App!</title>
+  </head>
+  <body>
+    <h1 class="display-3 m-3 pb-5 text-center">Dannaroo's Weather App!</h1>
+    <div class="container" id="searchBox">
+
+      <form class="mt-5">
+        <div class="form-group text-center m-5 pt-5 pb-4">
+          <label class="font-weight-bold" for="search">What's the weather like in...</label>
+          <input class="form-control text-center" type="search" name="search" id="search" placeholder="City-Name">
+          <input class="btn btn-primary m-3" type="submit" value="Search" id="submit">
+        </div>
+      </form>
+    </div>
+    <div class="container text-center p-2" id="results" style="display: none">
+    </div>
+    <div class="container text-center" id="newSearch" style="display: none">
+      <button class="btn btn-primary m-3">Search Again</button>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer mt-5">
+        <div class="col-md text-md-right">
+          <small>&copy; <a href="https://www.metaweather.com/" target="_blank">MetaWeather.com</a> &amp; <a href="../myportfolio/index.html" target="_blank">Danny Ward Web Development</a></small>
+        </div>
+
+    </footer><!-- /footer -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
