@@ -11,7 +11,7 @@ $('form').submit(function (evt) {
    // $searchField.prop("disabled",true);
    // $submitButton.attr("disabled", true).val("searching....");
     // the AJAX part
-    const mwAPI = "http://api.openweathermap.org/data/2.5/weather?q=" + $searchTerm + "&APPID=85a26e603bc7dbe69a147ee2e7780d23";
+    const mwAPI = "https://api.openweathermap.org/data/2.5/weather?q=" + $searchTerm + "&APPID=85a26e603bc7dbe69a147ee2e7780d23";
       $.getJSON(mwAPI, function(data) {
         const currentTemp = Math.round(data.main.temp - 273.15) + " &#x000B0;C";
         const maxTemp = Math.round(data.main.temp_max - 273.15) + " &#x000B0;C";
