@@ -11,22 +11,27 @@
     <title>Dannaroo's Weather App!</title>
   </head>
   <body>
-    <h1 class="display-3 m-3 pb-5 text-center">Dannaroo's Weather App!</h1>
-    <div class="container" id="searchBox">
+    <div class="wrapper">
+      <h1 class="m-3 pb-5 text-center">Dannaroo's Weather App!</h1>
+      <div class="container" id="searchBox">
 
-      <form class="mt-5">
-        <div class="form-group text-center m-5 pt-5 pb-4">
-          <label class="font-weight-bold" for="search">What's the weather like in...</label>
-          <input class="form-control text-center" type="search" name="search" id="search" placeholder="City-Name">
-          <input class="btn btn-primary m-3" type="submit" value="Search" id="submit">
-        </div>
-      </form>
-    </div>
-    <div class="container text-center p-2" id="results" style="display: none">
-    </div>
-    <div class="container text-center" id="newSearch" style="display: none">
-      <button class="btn btn-primary m-3">Search Again</button>
-    </div>
+        <form class="mt-5">
+          <div class="form-group text-center m-5 pt-5 pb-4">
+            <label class="font-weight-bold" for="search">What's the weather like in...</label>
+            <input class="form-control text-center" type="search" name="search" id="search" placeholder="City-Name">
+            <input class="btn btn-primary m-3" type="submit" value="Search" id="submit">
+          </div>
+        </form>
+      </div>
+      <div class="container text-center p-2" id="errorMessage" style="display: none">
+        <span>Sorry, we could not find the weather for that city. Please try again.</span>
+      </div>
+      <div class="container text-center p-2" id="results" style="display: none">
+      </div>
+      <div class="container text-center" id="newSearch" style="display: none">
+        <button class="btn btn-primary m-3">Search Again</button>
+      </div>
+    </div><!-- wrapper-->
 
     <!-- footer -->
     <footer class="footer mt-5">

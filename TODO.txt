@@ -1,0 +1,3 @@
+-header too wide for mobile-FIXED
+-footer jumping around on mobile (only when console is displayed)
+-display error message when city not found- DONE
