@@ -29,7 +29,7 @@ $('form').submit(function (evt) {
 
 // print error message if AJAX request returns an error
 $( document ).ajaxError(function() {
-    $('#searchBox').css('display', 'none');
+  $('#searchBox').css('display', 'none');
   $('#errorMessage').css('display', 'block');
   newSearch.parentNode.style = 'display: block';
   $('#searchBox').attr('placeholder', '')
@@ -44,4 +44,11 @@ newSearch.addEventListener('click', () => {
   $('#searchBox').attr('placeholder', '')
   $('#results').css('display', 'none');
   $('#search').val('');
+  $('#submit').attr('value', 'Search');
+});
+
+// display loading message while waiting for ajax response
+$( document ).ajaxStart(function() {
+  console.log('ajaxStart')
+  $('#submit').attr('value', 'Loading...');
 });
